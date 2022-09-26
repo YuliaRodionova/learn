@@ -1,0 +1,22 @@
+.main-section {
+    @include default-container;
+
+    @media screen and (max-width: 992px) {
+        width: 860px;
+        max-width: 100%;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+.main-section__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: $other-color;
+    text-align: center;
+
+}

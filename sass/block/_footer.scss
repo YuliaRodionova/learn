@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 77px;
+    background-color: $font-color;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &__block {
+        @include default-container;
+        display: flex;
+        align-items: center;
+        padding: 60px 0px;
+
+        .footer_logo {
+            margin-right: 20px;
+        }
+
+        .link {
+            color: #fff;
+            padding-right: 20px;
+            font-size: 14px;
+
+            &:hover {
+                color: $brand-color;
+            }
+
+            &:last-child {
+                padding-right: 0px;
+            }
+        }
+
+
+    }
+}
