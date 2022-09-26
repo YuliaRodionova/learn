@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="registration" class="auth">
+        <button id="switch-auth" class="auth-switch__btn">
+            Авторизоваться
+        </button>
+        <form id="form-registration" class="form" action="#"
+            novalidate>
+            <h2 class="form__title">Регистрация</h2>
+            <fieldset class="form-fieldset">
+                <label for="email" class="form__label">
+                    Email </label>
+                <input id="email-registration"
+                    class="form__input" name="email"
+                    type="email"
+                    placeholder="Введите email">
+                <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label for="password"
+                    class="form__label">Пароль</label>
+                <input id="password-registration"
+                    class="form__input" name="password"
+                    type="password"
+                    placeholder="Введите пароль">
+                <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="form-fieldset checkbox">
+                <input id="checkbox1"
+                    class="form__input deleted-checkbox"
+                    name="checkbox1" type="checkbox">
+                <label for="checkbox1"
+                    class="label-checkbox"> Я согласен с
+                    <a class="label-checkbox__link"
+                        href="#">Правилами
+                        пользования
+                        приложением</a> </label>
+                <span class="error-message"></span>
+            </fieldset>
+            <button class="form__button">
+                Регистрация
+            </button>
+        </form>
+    </section>
+    <section id="sign-in" class="auth hide">
+        <button id="switch-sign-in"
+            class="auth-switch__btn">
+            Зарегистрироваться
+        </button>
+        <form id="form-sign-in" class="form" action="#"
+            novalidate>
+            <h2 class="form__title">Вход</h2>
+            <fieldset class="form-fieldset">
+                <label for="email" class="form__label">
+                    Email </label>
+                <input id="email-sign-in"
+                    class="form__input" name=email
+                    type="email"
+                    placeholder="Введите email">
+                <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label for="password"
+                    class="form__label">Пароль</label>
+                <input id="password-sign-in"
+                    class="form__input" name=password
+                    type="password"
+                    placeholder="Введите пароль">
+                <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="form-fieldset checkbox">
+                <input id="checkbox2"
+                    class="form__input deleted-checkbox"
+                    name="checkbox2" type="checkbox">
+                <label for="checkbox2"
+                    class="label-checkbox"> Я согласен
+                    получать уведомления на почту </label>
+                <span class="error-message"></span>
+            </fieldset>
+            <button id="sign-in-button"
+                class="form__button sign-in__button">
+                Вход
+            </button>
+        </form>
+    </section>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
