@@ -1,0 +1,17 @@
+.button-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.275s ease-in-out;
+}
+
+.button-icon:hover {
+    background-color: #D58C51;
+}
+
+.button-icon svg {
+    vertical-align: top;
+}
