@@ -1,8 +1,8 @@
-import './buttonIcon.css'
+import './buttonIcon.scss'
 
-function ButtonIcon({ children }) {
+function ButtonIcon({ children, addClass, сlickHandler }) {
     return (
-        <button className='button-icon'>
+        <button onClick={сlickHandler} className={`button-icon ${addClass}`}>
             {children}
         </ button>
     )

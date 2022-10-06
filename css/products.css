@@ -1,0 +1,17 @@
+.App .wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 70px 25px;
+}
+.App .wrapper .cards-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.cards-list {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+}/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,32 @@
+.button-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 0.275s ease-in-out;
+}
+.button-icon:hover {
+  background-color: #D58C51;
+}
+.button-icon.button-icon_big {
+  width: 50px;
+  height: 50px;
+}
+.button-icon.button-icon_brown {
+  border-color: #D58C51;
+}
+.button-icon.button-icon_brown:hover {
+  background-color: transparent;
+}
+.button-icon.button-icon_bg-brown {
+  background-color: #D58C51;
+  border: none;
+}
+.button-icon.button-icon_bg-brown:hover {
+  background-color: #D58C51;
+}/*# sourceMappingURL=buttonIcon.css.map */

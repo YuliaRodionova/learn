@@ -1,4 +1,4 @@
-import ProductCard from './components/elements/productCard';
+/*import ProductCard from './components/elements/productCard';
 import CardsHeader from './components/blocks/cardsHeader';
 import './App.css';
 import cardsCollection from './cardsCollection';
@@ -20,6 +20,25 @@ function App() {
       </div>
     </div>
   );
+}
+
+export default App;*/
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import Products from "./pages/products";
+import Cart from "./pages/cart";
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path='/' element={<Products />} />
+        <Route path='/basket' element={<Cart />} />
+      </Routes>
+    </>
+  )
+
+
 }
 
 export default App;

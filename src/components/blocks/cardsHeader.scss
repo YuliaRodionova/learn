@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        color: #FFFFFF;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+
+    .header-cart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__text {
+            color: #FFFFFF;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0 34px;
+        }
+
+        .button-icon {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}

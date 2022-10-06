@@ -1,0 +1,23 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        max-width: 132px;
+        height: auto;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__price {
+        color: #D58C51;
+
+        .button-icon {
+            margin-left: 16px;
+        }
+    }
+}
