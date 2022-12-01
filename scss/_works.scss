@@ -1,0 +1,14 @@
+.works {
+
+    @include containerMain;
+
+    &__title {
+        @include titleTwo;
+        margin-bottom: 23px;
+    }
+
+    &__description {
+        @include servicesFont;
+    }
+
+}

@@ -1,0 +1,109 @@
+.delivery {
+    @include containerMain;
+
+    &__title {
+        @include titleTwo;
+    }
+
+    &-list {
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .circle_green {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-shrink: 0;
+                width: 52px;
+                height: 52px;
+                background-color: $main-color;
+                border-radius: 50%;
+                font-family: Exo 2;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 1.25em;
+                color: $white-color;
+                z-index: 999;
+
+            }
+
+
+            .card {
+                &_white {
+                    position: relative;
+                    top: 0;
+                    left: -17px;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0px 4px 15px -2px #0000001F;
+                    padding: 30px 20px 30px 43px;
+                    overflow: hidden;
+
+                    @media screen and (min-width: 1280px) {
+                        display: flex;
+                    }
+
+                }
+
+                &-title {
+                    @include titleTree;
+
+                    @media screen and (min-width: 769px) {
+
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 70px;
+                            height: 2px;
+                            background-color: $accent-color;
+                            margin-top: 22px;
+                        }
+                    }
+                }
+
+                &-description {
+                    @include servicesFont;
+                    margin-top: 16px;
+                }
+
+                &-img {
+
+                    @media screen and (max-width: 1280px) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 1280px) {
+                        display: block;
+                        margin: 0px 40px;
+                    }
+                }
+            }
+
+
+            .badge {
+                position: absolute;
+                flex-shrink: 0;
+                width: 28px;
+                height: 64px;
+                background-color: #fff;
+                border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+                border: none;
+                left: 54px;
+                box-shadow: inset -11px 10px 30px -12px #0000001F;
+
+                @media screen and (min-width: 769px) {
+                    left: 74px;
+                }
+
+                @media screen and (min-width: 1280px) {
+                    left: 134px;
+                }
+
+            }
+        }
+
+    }
+}

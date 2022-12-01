@@ -1,0 +1,181 @@
+.customers {
+
+    background-color: $main-color;
+    background-image: url(../img/path.svg);
+    padding: 30px 0;
+    margin-top: 30px;
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 30px 0px;
+        margin: 0 100px;
+        padding: 60px 40px;
+    }
+
+    &-title {
+        @include containerMain;
+        @include titleTwo;
+        color: $white-color;
+        margin: 0px 0px 30px 0px;
+
+        @media screen and (min-width: 1280px) {
+            padding: 0;
+        }
+
+
+    }
+
+    &-container {
+        margin: 0 15px;
+        padding: 20px 15px;
+        background-color: $white-color;
+        border-radius: 4px;
+
+
+        &__mobile {
+            @media screen and (min-width: 769px) {
+                display: none;
+            }
+        }
+
+        &__dekstop {
+            position: relative;
+            padding: 50px;
+
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            @media screen and (min-width: 769px) {
+                border-bottom: 1px solid $line-color;
+                margin: 25px 0px;
+            }
+
+            &-logo {
+                margin-bottom: 15px;
+                width: 79px;
+                height: 43px;
+            }
+
+            &-text {
+                display: none;
+
+                @media screen and (min-width: 769px) {
+                    display: block;
+                    width: 40%;
+                    font-family: PT Sans;
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    color: $add-font;
+                    padding-bottom: 20px;
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+.mobile {
+
+
+    &-table {
+        background-color: $table-color;
+        display: none;
+
+
+
+        &.active {
+            display: block;
+        }
+
+
+
+        &__item {
+            padding: 20px;
+
+            &-img {
+                width: 90px;
+                height: auto;
+            }
+
+            &-text {
+                width: 60%;
+                margin-left: 16px;
+                @include baseFont;
+
+                & p {
+                    font-family: Exo 2;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.35em;
+
+                }
+            }
+
+
+
+            &:first-child {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                height: 1px;
+                width: 95%;
+                margin: 24px auto 0px;
+                background-color: $line-color;
+
+            }
+
+            &:last-child::after {
+                display: none;
+
+            }
+        }
+    }
+
+    &-select {
+        font: inherit;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        &:not([multiple]) {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            background-color: $main-color;
+            @include servicesFont;
+            color: $white-color;
+        }
+
+    }
+}
+
+
+.base-title {
+    @include baseTitle;
+}
+
+.base-text {
+    @include baseFont;
+}

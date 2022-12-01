@@ -1,0 +1,49 @@
+.contacts {
+    @include containerMain;
+
+    &-container {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            gap: 100px;
+        }
+    }
+
+
+
+    &__title {
+        @include titleTwo;
+    }
+
+    &-list {
+        @media screen and (min-width: 1280px) {
+            width: 40%;
+            padding-bottom: 0;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 45px;
+
+            &-svg {
+                flex-shrink: 0;
+            }
+
+            &-container {
+                margin-left: 32px;
+
+                .name {
+                    @include servicesFont;
+                }
+
+                .content {
+                    font-family: Exo 2;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.2em;
+
+                }
+            }
+        }
+    }
+}

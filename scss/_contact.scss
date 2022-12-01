@@ -1,0 +1,100 @@
+.contact {
+    margin: 40px 20px;
+    padding: 40px 20px;
+    background-color: $main-color;
+    color: $white-color;
+    overflow: hidden;
+
+
+    @media screen and (min-width: 768px) {
+        margin: 40px 40px;
+        padding: 40px 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    &-container {
+        @media screen and (min-width: 1280px) {
+            width: 60%;
+            padding: 40px 40px;
+
+        }
+    }
+
+    &__title {
+        @include titleTwo;
+        margin: 0px;
+    }
+
+    &-form {
+        &__textarea {
+            width: 100%;
+            background-attachment: local;
+            background-image:
+                linear-gradient(to right, $main-color 10px, transparent 10px),
+                linear-gradient(to left, $main-color 10px, transparent 10px),
+                repeating-linear-gradient(#0B7572, #0B7572 29px, #fff 30px, #ccc 31px, #0B7572 31px);
+            line-height: 31px;
+            padding: 8px 10px;
+            border: 1px solid transparent;
+            outline: none;
+            color: $white-color;
+
+            @media screen and (min-width: 768px) {
+                background-image:
+                    linear-gradient(to right, $main-color 10px, transparent 10px),
+                    linear-gradient(to left, $main-color 10px, transparent 10px),
+                    repeating-linear-gradient(#0B7572, #0B7572 39px, #fff 41px, #ccc 41px, #0B7572 42px);
+                line-height: 42px;
+            }
+
+            &::placeholder {
+
+                @include servicesFont;
+                color: $white-color;
+            }
+        }
+
+        &__download {
+            display: block;
+            margin-top: 35px;
+            padding-bottom: 19px;
+            border-bottom: 1px solid $white-color;
+
+
+            &-file {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+
+            &-img {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+
+            svg {
+                margin-right: 15px;
+            }
+        }
+
+
+    }
+
+    &-bg {
+        @media screen and (max-width: 1280px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: block;
+            width: 40%;
+
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.choice {
+    margin-top: 60px;
+
+
+
+
+    &-form {
+        @include containerMain;
+
+        &__title {
+            @include titleTwo;
+            color: $main-font;
+        }
+
+        .wrapper {
+            @media screen and (min-width: 1280px) {
+                display: flex;
+
+                &-container {
+                    width: 60%;
+                }
+            }
+        }
+
+        &__text {
+            color: #6B6B6C;
+            font-family: PT Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 48px;
+
+
+
+        }
+
+        &__fieldset {
+            position: relative;
+            display: flex;
+            align-items: unset;
+            @include shadowBlock;
+            border-radius: 10px;
+            border: 1px solid $other-color;
+            margin-bottom: 10px;
+            padding: 20px 20px;
+
+            &:hover {
+                border: 1px solid $border-color;
+                width: calc(100% - 4px);
+            }
+
+            @media screen and (min-width: 768px) {
+                padding: 40px 40px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -1px;
+                    right: 0;
+                    width: 190px;
+                    height: 40px;
+                    border-radius: 0 0 10px 0px;
+                    background: linear-gradient(to right bottom,
+                            transparent 50%, $other-color 0) 100% 0 no-repeat;
+                }
+            }
+
+
+
+
+
+            &-input {
+                width: 0;
+                height: 0;
+                position: absolute;
+                opacity: 0;
+                z-index: -2;
+            }
+
+            &-label {
+
+                padding-left: 2px;
+
+                @media screen and (min-width: 768px) {
+                    width: 55%;
+                    margin-left: 35px;
+                }
+
+                .label-title {
+                    @include titleTree;
+
+                    @media screen and (min-width: 768px) {
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .label-description {
+                    font-family: PT Sans;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    padding-left: 25px;
+
+
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+    &-calc {
+        @media screen and (max-width: 1280px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: inline-block;
+            margin: 110px 0px 0px 110px;
+
+            &__title {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.5em;
+
+            }
+
+            &__num {
+                font-size: 54px;
+                font-weight: 600;
+                line-height: 1.5em;
+                border-bottom: 3px solid $accent-color;
+
+                &-text {
+                    font-size: 30%;
+                    color: $add-font;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+.custom-radio-btn {
+    flex-shrink: 0;
+    box-shadow: inset 0px 2px 4px -1px $shadow-color;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: $main-color;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.2s ease-in;
+    }
+
+}
+
+
+
+.choice-form__fieldset-input:checked+.custom-radio-btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}

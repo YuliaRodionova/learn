@@ -1,0 +1,62 @@
+.result {
+    @include containerMain;
+
+    @media screen and (min-width: 769px) {
+        &-container {
+            background-color: $table-color;
+            padding: 30px 40px;
+            border-radius: 5px;
+        }
+    }
+
+
+
+
+    &__title {
+        @include titleTwo;
+        margin-bottom: 0px;
+
+        @media screen and (min-width: 769px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        @include titleTree;
+        margin: 32px 0px 16px;
+
+        @media screen and (min-width: 769px) {
+            margin: 20px 0px 20px;
+        }
+    }
+
+    &__text {
+        @include servicesFont;
+    }
+
+    &__pictures {
+        display: flex;
+        gap: 5px;
+
+        img {
+            width: 110px;
+            height: 86px;
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 769px) {
+                width: 175px;
+                height: 136px;
+
+            }
+        }
+    }
+}
+
+.btn_green {
+    @media screen and (max-width: 769px) {
+        display: none;
+
+    }
+
+    padding: 15px 35px;
+}

@@ -1,0 +1,116 @@
+.advantages {
+    @include containerMain;
+
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+
+    }
+
+
+
+
+
+    &-container {
+        @media screen and (min-width: 768px) {
+            background-image: url(../img/advantages.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 50px 0;
+
+        }
+
+
+        &__title {
+            @include titleTwo;
+
+            @media screen and (min-width: 768px) {
+
+                position: relative;
+                color: $white-color;
+                background-color: $main-color;
+                padding: 170px 20px;
+                max-width: 65%;
+                background: linear-gradient(-110deg, transparent 30%, #0B7572 0);
+                overflow: hidden;
+                margin: 0;
+                z-index: 9999;
+
+                span {
+                    display: block;
+                    width: 70%;
+                }
+
+
+
+            }
+
+            @media screen and (min-width: 1280px) {
+                padding: 190px 100px;
+            }
+        }
+    }
+
+
+
+    &-list {
+
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            padding: 0 40px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            gap: 40px;
+            @include containerMain;
+
+        }
+
+
+
+        &__item {
+            display: flex;
+            margin-bottom: 35px;
+
+            @media screen and (min-width: 1280px) {
+                width: calc(50% - 40px);
+
+            }
+
+            &-svg {
+                flex-shrink: 0;
+
+                @media screen and (min-width: 1280px) {
+                    width: 80px;
+                    height: 80px;
+
+                }
+            }
+
+            &-container {
+                margin-left: 16px;
+
+                @media screen and (min-width: 768px) {
+                    margin-left: 35px;
+
+                }
+
+
+                .container-title {
+                    @include titleTree;
+                }
+
+                .container-description {
+                    @include servicesFont;
+
+
+                }
+            }
+        }
+    }
+}
