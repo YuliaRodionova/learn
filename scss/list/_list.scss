@@ -1,0 +1,23 @@
+.list {
+    list-style-type: none;
+
+    &_black {
+        color: #000;
+    }
+
+    &_violet {
+        color: $main-color;
+    }
+
+    &_white {
+        color: $white-color;
+    }
+}
+
+.item {
+    padding-left: 2rem;
+    background-image: url(../../img/checkMark.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+}

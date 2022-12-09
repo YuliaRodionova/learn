@@ -1,0 +1,40 @@
+@mixin marginLeftRightAuto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin accentFont {
+    font-size: 18px;
+
+    @media screen and (min-width:679px) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 28px;
+    }
+}
+
+@mixin circlePrice {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-left: 10px;
+
+
+
+}
+
+@mixin line {
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: black;
+
+    @media screen and (min-width:1200px) {
+        width: 90px;
+
+    }
+}

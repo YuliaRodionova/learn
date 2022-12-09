@@ -1,0 +1,33 @@
+.feedback {
+    background-image: url(../../img/pattern.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    padding-bottom: 30px;
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        background-color: $white-color;
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+
+    &__container {
+        padding: 0 20px;
+    }
+
+    &__title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-size: 14px;
+    }
+}

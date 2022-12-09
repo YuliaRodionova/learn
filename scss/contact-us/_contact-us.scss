@@ -1,0 +1,80 @@
+.contact-us {
+
+    @media screen and (min-width:679px) {
+        background-image: url(../../img/bgImg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        margin-top: 30px;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    &__product {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__img {
+        min-width: 300px;
+        @include marginLeftRightAuto;
+        margin-bottom: 20px;
+    }
+
+    &__old {
+        position: absolute;
+        left: -20px;
+        bottom: 50px;
+    }
+
+
+    &__new {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        animation: animate_grow 1.2s ease-in-out 0s normal none infinite running;
+
+
+
+
+
+        @keyframes animate_grow {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(-10deg);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+
+
+
+
+
+    }
+
+    &__form {
+
+        @media screen and (min-width:768px) {
+            margin-left: 50px;
+        }
+    }
+}

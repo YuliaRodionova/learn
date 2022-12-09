@@ -1,0 +1,100 @@
+.head {
+    background-image: url(../../video/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &__list {
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+        .item {
+            background-position: 0px 4px;
+
+            @media screen and (min-width: 769px) {
+                background-position: 0px 6px;
+            }
+        }
+
+        li+li {
+            margin-top: 25px;
+        }
+
+        @media screen and (min-width: 769px) {
+            font-size: 24px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        width: 100%;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__info {
+        @media screen and (min-width: 769px) {
+            width: 65%;
+            padding-left: 20px;
+        }
+    }
+
+    &__img {
+        max-width: 50%;
+        display: block;
+        @include marginLeftRightAuto;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 769px) {
+            max-width: 35%;
+        }
+    }
+
+    &__button {
+        @media screen and (max-width: 768px) {
+            display: block;
+            @include marginLeftRightAuto;
+        }
+    }
+
+}
+
+
+
+.fullscreen-bg {
+    position: relative;
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+@supports (object-fit: cover) {
+    .fullscreen-bg__video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

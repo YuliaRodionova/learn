@@ -1,0 +1,43 @@
+.button {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 2px 3px 8px rgba(70, 70, 70, 0.12);
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (min-width:769px) {
+        font-size: 20px;
+        padding: 10px 35px;
+    }
+
+    @media screen and (min-width:769px) {
+        font-size: 24px;
+        padding: 13px 40px;
+    }
+
+    &:active {
+        box-shadow: inset 7px 7px 8px rgba(218, 211, 211, 0.25),
+            inset 7px 7px 8px rgba(70, 70, 70, 0.25);
+
+    }
+
+    &_white {
+        background-color: $white-color;
+        color: $main-color;
+
+        &:hover {
+            background-color: darken($white-color, $amount: 5);
+        }
+    }
+
+    &_yellow {
+        background-color: $accent-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: darken($accent-color, $amount: 5);
+        }
+    }
+}

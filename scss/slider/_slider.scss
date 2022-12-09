@@ -1,0 +1,58 @@
+.feedbackSlide {
+
+    .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 20px;
+
+
+        &-slide {
+            border: 1px solid $gray-color;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px 0px #0000001F;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+
+        }
+    }
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 47%;
+}
+
+.worksSlide,
+.swiper-initialized,
+.swiper-horizontal,
+.swiper-backface-hidden {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --swiper-theme-color: #ffe900;
+}
