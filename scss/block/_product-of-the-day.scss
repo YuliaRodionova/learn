@@ -1,0 +1,25 @@
+@import '../var';
+@import '../mixin';
+
+.product-of-the-day {
+    &__num {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $text-color;
+
+    }
+
+    &__price {
+        justify-content: space-around;
+        border-bottom: 1px solid $bg-main-color;
+        padding-bottom: 12px;
+    }
+
+    &__button {
+        position: relative;
+        margin-left: 10px;
+    }
+
+
+}

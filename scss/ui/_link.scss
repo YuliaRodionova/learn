@@ -1,0 +1,13 @@
+.link {
+    color: inherit;
+
+    &__uppercase {
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background-color: inherit;
+        color: inherit;
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset/reset.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="category-card">
+        <img class="category-card__img"
+            src="./img/categoryCardImg.png" alt="">
+        <h2 class="category-card__title">Кольца</h2>
+    </div>
+    <div class="product-card">
+        <span
+            class="badge-custom badge-custom_blue">Sale</span>
+        <span
+            class="badge-custom badge-custom_gold">Хит</span>
+        <div id="carouselExampleCaptions"
+            class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/product.jpg"
+                        class="d-block w-100" alt="кольцо">
+                    <div
+                        class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/product.jpg"
+                        class="d-block w-100"
+                        alt="кольцо другой ракурс">
+                    <div
+                        class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/product.jpg"
+                        class="d-block w-100"
+                        alt="еще ракурс">
+                    <div
+                        class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card__icons">
+            <button
+                class="custom-button custom-button_with-icon">
+                <svg class="icon_light icon_heart"
+                    width="24" height="24"
+                    viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 8.39995C1.99975 6.95029 2.58239 5.5614 3.61681 4.54578C4.65124 3.53016 6.05058 2.97311 7.5 2.99995C9.21732 2.99083 10.856 3.71913 12 4.99995C13.144 3.71913 14.7827 2.99083 16.5 2.99995C17.9494 2.97311 19.3488 3.53016 20.3832 4.54578C21.4176 5.5614 22.0002 6.95029 22 8.39995C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.39995Z" />
+                </svg>
+            </button>
+            <button
+                class="custom-button custom-button_with-icon">
+                <svg class="icon_light" width="24"
+                    height="24" viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z" />
+                </svg>
+            </button>
+        </div>
+        <div class="product-card__price">
+            <p class="price_new">41 000
+                ₽ <span class="price_old">65
+                    000
+                    ₽</span></p>
+
+            <span class="badge-custom bg_red">-45%</span>
+        </div>
+        <p class="product-card__description">
+            Стильное кольцо из белого золота c бриллиантами
+        </p>
+        <form>
+            <div class="__select product-card__select product-card__select-material"
+                data-state="">
+                <div class="__select__title"></div>
+                <div class="__select__content">
+                    <input id="singleSelect0"
+                        class="__select__input" type="radio"
+                        name="material" checked />
+                    <label for="singleSelect0" tabindex="0"
+                        class="__select__label"
+                        data-value="Белое золото"></label>
+                    <input id="singleSelect1"
+                        class="__select__input" type="radio"
+                        name="material" />
+                    <label for="singleSelect1" tabindex="0"
+                        class="__select__label"
+                        data-value="Желтое золото"></label>
+                    <input id="singleSelect2"
+                        class="__select__input" type="radio"
+                        name="material" />
+                    <label for="singleSelect2" tabindex="0"
+                        class="__select__label"
+                        data-value="Серебро"></label>
+                </div>
+            </div>
+            <div class="__select product-card__select product-card__select-size"
+                data-state="">
+                <div class="__select__title"></div>
+                <div class="__select__content">
+                    <input id="size16"
+                        class="__select__input" type="radio"
+                        name="size" checked />
+                    <label for="size16" tabindex="0"
+                        class="__select__label"
+                        data-value="Размер: 16"></label>
+                    <input id="size16_5"
+                        class="__select__input" type="radio"
+                        name="size" />
+                    <label for="size16_5" tabindex="0"
+                        class="__select__label"
+                        data-value="Размер: 16.5"></label>
+                    <input id="size17"
+                        class="__select__input" type="radio"
+                        name="size" />
+                    <label for="size17" tabindex="0"
+                        class="__select__label"
+                        data-value="Размер: 17"></label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

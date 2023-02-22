@@ -1,0 +1,194 @@
+@import './var';
+@import './mixin';
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    margin-top: -12px;
+}
+
+.main-section {
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: 992px) {
+        margin-bottom: 8rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+}
+
+.title {
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+    }
+
+    &_xs {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+
+    }
+
+    &_s {
+        font-family: Prata;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &_m {
+        font-family: Prata;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+
+    }
+}
+
+.promo-text {
+    font-family: Prata;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 520px) {
+        font-size: 18px;
+    }
+}
+
+
+
+.text {
+    &-grey {
+        color: $dark-color;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.bg-grey {
+    background-color: $bg-color;
+}
+
+.icon {
+    &_light {
+        fill: #C9C9C9;
+    }
+}
+
+.price {
+
+    &_new {
+        font-size: 18px;
+        font-weight: 700;
+        color: $dark-color;
+        margin: 0;
+
+        @media screen and (max-width: 992px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+
+    &_old {
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+        text-decoration: line-through;
+        margin-left: 15px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+
+    }
+}
+
+.bg {
+    &_blue {
+        background-color: $promo-color;
+    }
+
+    &_gold {
+        background-color: $accent-color;
+    }
+
+    &_red {
+        background-color: $error-color;
+    }
+
+    &_dark {
+        background-color: #495159;
+    }
+
+    &_diamond {
+        background: url(../img/Union.png) no-repeat 10% 50%;
+        background-size: contain;
+    }
+}
+
+
+.carousel-indicators {
+    [data-bs-target] {
+        width: 8px;
+        height: 8px;
+        border: 1px solid $dark-color;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .active {
+        background-color: $dark-color;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dekstop-navbar {
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.min-navbar {
+    @media screen and (min-width: 999px) {
+        display: none;
+    }
+}

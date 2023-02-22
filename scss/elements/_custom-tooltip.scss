@@ -1,0 +1,23 @@
+@import '../var';
+@import '../mixin';
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-white);
+    --bs-tooltip-color: var(--bs-dark);
+    --bs-tooltip-font-size: 14px;
+    --bs-tooltip-arrow-width: 0;
+    --bs-tooltip-arrow-height: 0;
+    --bs-tooltip-opacity: 1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 47%;
+        width: 10px;
+        height: 10px;
+        background-color: $white-color;
+        transform: rotate(45deg);
+    }
+}

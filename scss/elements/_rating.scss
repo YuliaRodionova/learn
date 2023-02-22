@@ -1,0 +1,18 @@
+@import '../var';
+@import '../mixin';
+
+.rating {
+    position: relative;
+    width: auto;
+    height: 35px;
+    margin-left: auto;
+}
+
+.rating-1 li:nth-child(-n+1),
+.rating-1 li:nth-child(-n+1),
+.rating-2 li:nth-child(-n+2),
+.rating-3 li:nth-child(-n+3),
+.rating-4 li:nth-child(-n+4),
+.rating-5 li:nth-child(-n+5) {
+    color: $accent-color;
+}

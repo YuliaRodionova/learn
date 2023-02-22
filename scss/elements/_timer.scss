@@ -1,0 +1,46 @@
+@import '../var';
+@import '../mixin';
+
+#CDT {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: $dark-color;
+    margin: 5px 0 10px;
+    font-weight: bold;
+    background-color: $light-color;
+
+    .number-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        position: relative;
+        width: 52px;
+        height: 40px;
+        border: 1px solid #D0D0D0;
+        background-color: $white-color;
+
+        +.number-wrapper::before {
+            content: ':';
+            position: absolute;
+            left: -13px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+    .number {
+        display: inline-block;
+        line-height: 1;
+    }
+}
+
+.caption {
+    font-size: 11px;
+    text-align: center;
+    color: $dark-color;
+    text-transform: lowercase;
+    font-weight: 300;
+}

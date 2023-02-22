@@ -1,0 +1,82 @@
+@import '../var';
+@import '../mixin';
+
+.product__color {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &+label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #adb5bd;
+            border-radius: 50%;
+            margin-right: 3px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+            z-index: 4;
+        }
+    }
+
+    &_silver+label::after {
+        background-color: #DADADA;
+    }
+
+    &_gold+label::after {
+        background-color: $accent-color;
+    }
+
+    &_platinum+label::after {
+        background-color: #EA8C48;
+    }
+
+    &_gold_white+label::after {
+        background-color: #A7E492;
+    }
+
+    &:not(:disabled):not(:checked)+label:hover::before {
+        opacity: 0.6;
+    }
+
+    &:checked+label::before {
+        border-color: $dark-color;
+        background-color: inherit;
+    }
+
+    &:disabled+label {
+        &::before {
+            background-color: $white-color;
+        }
+
+        &::after {
+            opacity: 0.2;
+        }
+    }
+}

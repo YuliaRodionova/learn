@@ -1,0 +1,138 @@
+@import '../var';
+@import '../mixin';
+
+.btn {
+    &_corner {
+        border-radius: 0;
+        font-size: 14px;
+    }
+
+    &_circle {
+        border-radius: 50%;
+    }
+
+    &_oval {
+        border-radius: 21px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &_medium {
+        padding: 3px 10px;
+    }
+
+    &_large {
+        padding: 12px 0;
+    }
+
+    &_full-width {
+        width: 100%;
+    }
+
+
+
+    &_auth {
+        border: none;
+        font-size: 14px;
+        color: $dark-color;
+        padding: 0;
+        --bs-btn-active-color: inherit;
+        --bs-btn-active-bg: inherit;
+        --bs-btn-active-border-color: inherit;
+        --bs-btn-active-shadow: none;
+
+        &:hover {
+            background-color: inherit;
+            color: inherit;
+            opacity: 0.6;
+        }
+
+        &:hover::before {
+            @include bgDark;
+            opacity: 1;
+        }
+
+        &:last-child::before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            @include bgDark;
+            margin-right: 5px;
+        }
+    }
+
+    &_sign-in {
+        margin-right: 5px;
+    }
+
+    //rewrite bootstrap style
+
+    &-dark {
+        @include bgDark;
+
+        &:hover {
+            background-color: #505050;
+        }
+
+        &:focus {
+            @include bgBlackColorWhite;
+        }
+    }
+
+    &-light {
+        background-color: $bg-main-color;
+        color: $dark-color;
+
+        :hover {
+            background-color: #DDDDDD;
+        }
+
+        &:focus {
+            @include bgDarkColorWhite;
+        }
+    }
+
+    &-outline-dark {
+        @include borderAndColorDark;
+
+        &:hover {
+            @include bgDark;
+        }
+
+        &:focus {
+            @include bgBlackColorWhite;
+        }
+    }
+
+    &-outline-light {
+        border-color: #DADADA;
+        color: $dark-color;
+
+        &:hover {
+            @include borderAndColorDark;
+        }
+
+        &:focus {
+            @include bgDarkColorWhite;
+        }
+    }
+
+    &_with-icon {
+        padding: 14px 17px;
+
+        &:first-child {
+            margin-right: 5px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $light-color;
+        }
+
+        &:focus {
+            padding-left: 24px;
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../var';
+@import '../mixin';
+
+.promo {
+    @media screen and (min-width: 1440px) {
+        margin-top: 90px;
+        margin-bottom: 120px;
+    }
+
+
+    &__card {
+        background-color: $bg-color;
+        overflow: hidden;
+    }
+
+    &__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: $white-color;
+        width: 194px;
+        height: 58px;
+        margin-top: 20px;
+
+        &_strong {
+            font-size: 36px;
+            margin-left: 13px;
+        }
+    }
+
+    &__description {
+        .info {
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: end;
+
+        img {
+            height: 100%;
+            max-width: none;
+        }
+    }
+
+
+}

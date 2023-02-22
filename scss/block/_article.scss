@@ -1,0 +1,31 @@
+@import '../var';
+@import '../mixin';
+
+.article {
+
+    @media screen and (min-width: 1440px) {
+        margin-top: -24px;
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+        margin: 15px auto;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 500;
+
+        a {
+            color: $dark-color;
+        }
+    }
+
+}

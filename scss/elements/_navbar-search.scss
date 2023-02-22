@@ -1,0 +1,16 @@
+@import '../var';
+@import '../mixin';
+
+.navbar-search {
+    padding-left: 10px;
+    border-left: 1px solid $bg-main-color;
+
+    &__icon {
+        border: none;
+    }
+
+    __input {
+        border: none;
+        background-color: transparent;
+    }
+}

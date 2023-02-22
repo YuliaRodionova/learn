@@ -1,0 +1,19 @@
+@import '../var';
+@import '../mixin';
+
+.button {
+    &__icon {
+        margin-top: -2px;
+    }
+
+    &_question {
+        padding: 4px 7px;
+        background-color: $bg-main-color;
+        border: none;
+
+        &:hover {
+            background-color: #D3D3D3;
+        }
+    }
+
+}

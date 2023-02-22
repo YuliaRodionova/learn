@@ -1,0 +1,59 @@
+@import '../var';
+@import '../mixin';
+
+.custom-button {
+    display: inline-flex;
+
+
+    &_with-icon {
+        &:hover>.icon_light {
+            fill: #979797;
+        }
+
+        &:focus>.icon_heart {
+            fill: $error-color;
+        }
+
+        &_square {
+
+            svg {
+                margin: 6px;
+            }
+
+            &:hover {
+                background-color: $bg-color;
+            }
+
+            &:focus {
+                background-color: #E8E7E7;
+            }
+        }
+
+        &_standart-color {
+            &:hover {
+                &::before {
+                    content: url(../../img/chartDark.svg);
+                    margin-left: 1px;
+                    margin-right: -26px;
+                    margin-bottom: -2px;
+                    padding-bottom: 0;
+                }
+            }
+
+        }
+    }
+
+    &_with-text {
+        &:hover {
+            color: #979797;
+        }
+    }
+
+}
+
+.custom-buttons {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    gap: 14px;
+}

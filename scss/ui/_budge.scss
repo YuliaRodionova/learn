@@ -1,0 +1,9 @@
+@import '../var';
+@import '../mixin';
+
+.badge-custom {
+    border-radius: 15px;
+    padding: 1px 9px 2px;
+    color: $white-color;
+    font-size: 13px;
+}

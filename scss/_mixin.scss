@@ -1,0 +1,29 @@
+@import './var';
+
+@mixin bgDark {
+    background-color: $dark-color;
+}
+
+@mixin bgLight {
+    background-color: $light-color;
+}
+
+@mixin borderAndColorDark {
+    border-color: $dark-color;
+    color: $dark-color;
+}
+
+@mixin colorWhiteNoOpacity {
+    color: $white-color;
+    opacity: 1;
+}
+
+@mixin bgBlackColorWhite {
+    background-color: $black-color;
+    @include colorWhiteNoOpacity;
+}
+
+@mixin bgDarkColorWhite {
+    background-color: $dark-color;
+    @include colorWhiteNoOpacity;
+}

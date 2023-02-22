@@ -1,0 +1,18 @@
+@import '../var';
+@import '../mixin';
+
+.count {
+    position: relative;
+}
+
+.compare-count {
+    position: absolute;
+    top: 0;
+    left: calc(50% + 3px);
+    font-size: 10px;
+    font-weight: 700;
+    color: $white-color;
+    padding: 1px 4px;
+    line-height: 1;
+    border-radius: 100%;
+}
